@@ -11,31 +11,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="main_content_wrapper">
+    <!-- loading screen  -->
+    <div class="loading_screen" id="loading_screen">
+        <div class="loading_screen_content">
+            <img src="/logo/Animatedlogo.gif" alt="logo" class="loading_screen_content_logo"/>
+        </div>
+    </div>
+
+    <!-- main content -->
+
+    <div class="main_content_wrapper" id="home">
     <div class="main_content">
         <div class="header">
                 <div class="logo_and_time">
-                    <img src="/logo/logo.jpg" alt="logo" class="logo">
+                    <a href="https://accesspluss.netflify.app" ><img src="/logo/logo.jpg" alt="logo" class="logo"/></a>
                     <div id="clock" class="montserrat_font" >loading...</div>
                     <div class="social_media">
-                        <i class="fa-brands fa-facebook" style="color: #39404a;"></i>
-                        <i class="fa-brands fa-twitter" style="color: #39404a;"></i>
-                        <i class="fa-brands fa-instagram" style="color: #39404a;"></i>
-                        <i class="fa-brands fa-linkedin" style="color: #39404a;"></i>
+                        <a href="https://www.facebook.com/accessNaseer"> <i class="fa-brands fa-facebook" style="color: #39404a;"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" style="color: #39404a;"></i></a>
+                        <a href="https://www.instagram.com/accessnaseer?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram" style="color: #39404a;"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin" style="color: #39404a;"></i></a>
 
                         </div>
 
                     </div>
                     <div class="menu_and_adress">
                         <div class="menu montserrat_font">
-                            <p class="menu_item">Home</p>
-                            <p class="menu_item">Services</p>
-                            <p class="menu_item">About Us</p>
-                            <p class="menu_item">Contact Us</p>
+                            <a href="#home" style="text-decoration: none;color:black;"><p class="menu_item hover-underline">Home</p></a>
+                            <a href="#services" style="text-decoration: none;color:black;"><p class="menu_item hover-underline">Services</p></a>
+                            <a href ="#projects" style="text-decoration: none;color:black;"><p class="menu_item hover-underline">Projects</p></a>
+                            <a href="#aboutus" style="text-decoration: none;color:black;"><p class="menu_item hover-underline">About Us</p></a>
+                            <a href ="#contactus" style="text-decoration: none;color:black;"><p class="menu_item hover-underline">Contact Us</p></a>
                         </div>
                         <div class="adress montserrat_font">
                           <div class="icon_container">
-                            <i class="fa-solid fa-location-dot fa-xl" style="color: #3D2B99;"></i>
+                            <a href="https://maps.app.goo.gl/uszWcS2wFhQSmYds6"><i class="fa-solid fa-location-dot fa-xl" style="color: #3D2B99;"></i></a>
                         </div>
                             <div class="text_container montserrat_font">
                             <p class="text1">Samad Complex</p>
@@ -44,10 +54,10 @@
                             </div>
                             <div class="adress montserrat_font adress_modified">
                                 <div class="icon_container">
-                                    <i class="fa-solid fa-phone-volume fa-xl" style="color: #3D2B99;"></i>
+                                    <a href="tel:+917006481238"> <i class="fa-solid fa-phone-volume fa-xl" style="color: #3D2B99;"></i></a>
                               </div>
                                   <div class="text_container montserrat_font">
-                                  <p class="text1">Get in touch</p>
+                                    <p class="text1">Get in touch</p>
                                   <p class="text2">+91 7006481238</p>
                                   </div>
                                   </div>
@@ -72,11 +82,11 @@
                     <div>Construction.</div>
                   </div>
                   <h3 class="main_screen_text_2 montserrat_font">
-                    In Access Plus we Believe in "Trust-Led. Quality-Driven."
+                    In Access Plus we are "Committed to Excellence"
                   </h3>
-                  <h3 class="main_screen_text_2 main_screen_text_3 montserrat_font">
+                  <a href="#services"class="montserrat_font" style="text-decoration: none;"><h3 class="main_screen_text_2 main_screen_text_3 montserrat_font">
                    Learn More <i class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i>
-                  </h3>
+                  </h3></a>
         </div>
         <div class="main_screen_image">
           <img class="main_screen_image_inside" src="https://cdn.dribbble.com/userupload/26399753/file/original-3af8799add9abbe594c2b54275221f38.gif" alt="logo"/>
@@ -84,7 +94,7 @@
     </div>
     </div>
 
-    <div class="qualified_skills_screen_wrapper">
+    <div class="qualified_skills_screen_wrapper" id="services">
     <div class="qualified_skills_screen">
         <div class="qualified_header montserrat_font">
             Qualified Skills
@@ -196,7 +206,7 @@
 
 
 
-    <div class="photo_gallery_wrapper">
+    <div class="photo_gallery_wrapper" id="projects">
         <div class="photo_gallery_text_wrapper">
             <div class="qualified_header montserrat_font photo_gallery_header">
                 Project Gallery
@@ -221,7 +231,7 @@
         </div>
     </div>
 
-    <div class="intro_owner_wrapper">
+    <div class="intro_owner_wrapper" id="aboutus">
         <div class="intro_owner_content_wrapper">
             <div class="qualified_header montserrat_font">
                 Behind Brand
@@ -254,11 +264,11 @@ At the heart of <span style="color:#3D2B99;">Access Plus</span> is a commitment 
               
     </div>
 
-    <div class="footer_wrapper">
+    <div class="footer_wrapper" id="contactus">
         <div class="footer_content_wrapper">
             <img src="/logo/logo.jpg" style="margin-left:100px;width:200px;" alt="footerlogo"/>
             <h2 class="montserrat_font" style="font-weight:300;margin-left:230px;font-size:35px;color:white">Intrested in working togethor ?</h2>
-            <button class="footer_contactus_button montserrat_font">Contact Us<i class="fa-solid fa-arrow-right" style="margin-left:10px;"></i></button>
+           <a href="https://api.whatsapp.com/send?phone=+917006481238_NUMBER&text=Sir can we have a chat ?" tittle="contact on whatsapp" class="montserrat_font"> <button class="footer_contactus_button montserrat_font glow-on-hover ">Contact Us<i class="fa-solid fa-arrow-right" style="margin-left:10px;"></i></button></a>
         </div>
     </div>
 
