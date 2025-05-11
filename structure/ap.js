@@ -24,4 +24,26 @@ function updateClock() {
   };
   
 
+  // theree bar funcntionality script
+  threebar.onclick = function() {
+    if(threebar.classList.contains('fa-bars')) {
+      threebar.classList.remove('fa-bars');
+      threebar.classList.add('fa-xmark');
+    }
+    else {
+      threebar.classList.remove('fa-xmark');
+      threebar.classList.add('fa-bars');
+    }
   
+  
+  }
+
+
+
+
+  threebar.addEventListener("click", () => {
+ 
+    menu_and_adresss.classList.toggle("menu_and_adress2");
+    menuu.classList.toggle("menu2");
+   
+  });
