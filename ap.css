@@ -36,7 +36,6 @@
 
 
 
-
   /* main content section */
   .main_content_wrapper{
     width:100%;
@@ -1330,6 +1329,10 @@
     }
 
     @media only screen and (max-width:600px){
+        .loading_screen_content_logo{
+    width:300px;
+  }
+
       .header{
         width:500px;
         height:125px;

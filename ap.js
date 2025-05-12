@@ -16,7 +16,7 @@ function updateClock() {
   updateClock();
   setInterval(updateClock, 1000);
 
-  // loading screen script
+  // // loading screen script
   window.onload = function() {
     // Only when everything is actually loaded
     document.getElementById('loading_screen').style.display = 'none';
