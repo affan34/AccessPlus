@@ -47,3 +47,60 @@ function updateClock() {
     menuu.classList.toggle("menu2");
    
   });
+
+
+
+  // script for typing text in main screen
+   const items = [
+      "Computers.",
+      "CCTV.",
+      "Mobile CCTV.",
+      "Aerial Cameras.",
+      "GPS.",
+      "Epabax.",
+      "Networking Wireless.",
+      "Wired.",
+      "Electric items.",
+      "PRI Solutions.",
+      "UPS.",
+      "P.A Equipments.",
+      "Batteries.",
+      "Gym Equipment’s.",
+      "Sports Items.",
+      "Stationery.",
+      "Inverters.",
+      "Paints.",
+      "Hardware.",
+      "Interiors.",
+      "Furniture.",
+      "Construction."
+    ];
+
+    let i = 0;
+    let j = 0;
+    let isDeleting = false;
+    const speed = 80;
+    const pause = 1000;
+    const typedText = document.getElementById('typed-text');
+
+    function typeLoop() {
+      const current = items[i];
+      if (isDeleting) {
+        typedText.textContent = current.substring(0, j--);
+      } else {
+        typedText.textContent = current.substring(0, j++);
+      }
+
+      if (!isDeleting && j === current.length) {
+        isDeleting = true;
+        setTimeout(typeLoop, pause);
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % items.length;
+        setTimeout(typeLoop, 300);
+      } else {
+        setTimeout(typeLoop, isDeleting ? speed / 2 : speed);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', typeLoop);
