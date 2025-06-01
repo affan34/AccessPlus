@@ -59,7 +59,7 @@ function updateClock() {
       "GPS.",
       "Epabax.",
       "Networking Wireless.",
-      "Wired.",
+      "Networking Wired.",
       "Electric items.",
       "PRI Solutions.",
       "UPS.",
@@ -104,3 +104,40 @@ function updateClock() {
     }
 
     document.addEventListener('DOMContentLoaded', typeLoop);
+
+
+
+    // seemore script
+    seemore.addEventListener("click", () => {
+      
+        qualified_boxes_seemore1.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore2.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore3.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore4.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore5.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore6.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore7.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore8.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore9.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore10.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore11.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore12.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore13.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore14.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore15.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore16.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore17.classList.toggle("seemoredisplay2");
+        qualified_boxes_seemore18.classList.toggle("seemoredisplay2");
+       if (seemore.innerHTML.includes("See more")) {
+      seemore.innerHTML = `See less <i class="fa-solid fa-arrow-up" style="color: #394054;"></i>`;
+    } else {
+      seemore.innerHTML = `See more <i class="fa-solid fa-arrow-right-long" style="color: #394054;"></i>`;
+    }
+
+
+        
+      
+ 
+      
+     
+  });

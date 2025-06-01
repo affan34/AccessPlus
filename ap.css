@@ -328,6 +328,14 @@
     gap:10px;
     /* background-color:red; */
   }
+  .seemoredisplay{
+    display:none;
+  }
+  .seemoredisplay2{
+    display:flex;
+  }
+    
+  
   .photo_gallery_wrapper{
     width:100%;
     display:flex;
